@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EFE4B7517BE879700DD023B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE4B7417BE879700DD023B /* UIKit.framework */; };
+		4EFE4B7717BE879700DD023B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE4B7617BE879700DD023B /* Foundation.framework */; };
+		4EFE4B7917BE879700DD023B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE4B7817BE879700DD023B /* CoreGraphics.framework */; };
+		4EFE4B7F17BE879700DD023B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE4B7D17BE879700DD023B /* InfoPlist.strings */; };
+		4EFE4B8117BE879700DD023B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE4B8017BE879700DD023B /* main.m */; };
+		4EFE4B8517BE879700DD023B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE4B8417BE879700DD023B /* AppDelegate.m */; };
+		4EFE4B8717BE879700DD023B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE4B8617BE879700DD023B /* Default.png */; };
+		4EFE4B8917BE879700DD023B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE4B8817BE879700DD023B /* Default@2x.png */; };
+		4EFE4B8B17BE879700DD023B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE4B8A17BE879700DD023B /* Default-568h@2x.png */; };
+		4EFE4B8E17BE879700DD023B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE4B8C17BE879700DD023B /* MainStoryboard.storyboard */; };
+		4EFE4B9117BE879700DD023B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE4B9017BE879700DD023B /* MasterViewController.m */; };
+		4EFE4BAA17BE978F00DD023B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE4BA917BE978F00DD023B /* CoreLocation.framework */; };
+		4EFE4BB017BEC48C00DD023B /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE4BAF17BEC48C00DD023B /* DetailCell.m */; };
+		9213FDE918F1944F0066D4C6 /* Problem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213FDE818F1944F0066D4C6 /* Problem.m */; };
+		9213FDEC18F2D3F20066D4C6 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9213FDEB18F2D3F20066D4C6 /* Notification.m */; };
+		923A64FC190C0D9E0014506A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 923A64FB190C0D9E0014506A /* Settings.bundle */; };
+		924BB39618DEE1F900E12987 /* clProblemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924BB39418DEE1F900E12987 /* clProblemDetailViewController.m */; };
+		92516C0E18F922100079B83D /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 92516C0D18F922100079B83D /* Category.m */; };
+		9253055C190D03A000BCD12B /* GGFullScreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9253055B190D03A000BCD12B /* GGFullScreenImageViewController.m */; };
+		92530580190D2DC300BCD12B /* clSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9253057F190D2DC300BCD12B /* clSettingsViewController.m */; };
+		925371C61916324B00E8D868 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 925371C51916324B00E8D868 /* MBProgressHUD.m */; };
+		92576AFC18DDAB6E00F6020C /* clAddNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92576AF818DDAB6E00F6020C /* clAddNotificationViewController.m */; };
+		92576AFD18DDAB6E00F6020C /* clAddProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92576AF918DDAB6E00F6020C /* clAddProblemViewController.m */; };
+		9257B2A618DD7BF900CD22E6 /* clMapAddProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9257B2A418DD7BF900CD22E6 /* clMapAddProblemViewController.m */; };
+		927394FB18DD81B700800058 /* clMapAddNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927394F918DD81B700800058 /* clMapAddNotificationViewController.m */; };
+		927E3A171911450000363E8F /* AsyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 927E3A151911450000363E8F /* AsyncURLConnection.m */; };
+		927E3A1B19137F3800363E8F /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 927E3A1A19137F3800363E8F /* CustomIOS7AlertView.m */; };
+		927E3A1D1913893D00363E8F /* agreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 927E3A1C1913893D00363E8F /* agreement.html */; };
+		927E3A261914002C00363E8F /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 927E3A251914002C00363E8F /* AsyncImageView.m */; };
+		927E3A2C191525B700363E8F /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927E3A2B191525B700363E8F /* Mapbox.framework */; };
+		927E3A33191526A700363E8F /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 927E3A32191526A700363E8F /* Mapbox.bundle */; };
+		92C2C16118DD74B1001B99A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C2C16018DD74B1001B99A3 /* libz.dylib */; };
+		92C2C16318DD74BD001B99A3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C2C16218DD74BD001B99A3 /* libsqlite3.dylib */; };
+		92C2C16518DD74CB001B99A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C2C16418DD74CB001B99A3 /* QuartzCore.framework */; };
+		92C2C16A18DD76AF001B99A3 /* clMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C2C16818DD76AF001B99A3 /* clMapViewController.m */; };
+		92C2C16C18DD79D9001B99A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C2C16B18DD79D9001B99A3 /* Images.xcassets */; };
+		92FBDE7418EC380300BF7177 /* Problem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92FBDE7218EC380300BF7177 /* Problem.xcdatamodeld */; };
+		92FBDE7618EC3B2000BF7177 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FBDE7518EC3B2000BF7177 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EFE4B7117BE879700DD023B /* CityLeeks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityLeeks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFE4B7417BE879700DD023B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4EFE4B7617BE879700DD023B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4EFE4B7817BE879700DD023B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4EFE4B7C17BE879700DD023B /* CityLeeks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CityLeeks-Info.plist"; sourceTree = "<group>"; };
+		4EFE4B7E17BE879700DD023B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4EFE4B8017BE879700DD023B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EFE4B8217BE879700DD023B /* BrowseMeetup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseMeetup-Prefix.pch"; sourceTree = "<group>"; };
+		4EFE4B8317BE879700DD023B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4EFE4B8417BE879700DD023B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4EFE4B8617BE879700DD023B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4EFE4B8817BE879700DD023B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4EFE4B8A17BE879700DD023B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4EFE4B8D17BE879700DD023B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4EFE4B8F17BE879700DD023B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		4EFE4B9017BE879700DD023B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		4EFE4BA917BE978F00DD023B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4EFE4BAE17BEC48C00DD023B /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		4EFE4BAF17BEC48C00DD023B /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		9213FDE718F1944F0066D4C6 /* Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem.h; sourceTree = "<group>"; };
+		9213FDE818F1944F0066D4C6 /* Problem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem.m; sourceTree = "<group>"; };
+		9213FDEA18F2D3F20066D4C6 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		9213FDEB18F2D3F20066D4C6 /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		923A64FB190C0D9E0014506A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		924BB39218DEE1F900E12987 /* clProblemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clProblemDetailViewController.h; sourceTree = "<group>"; };
+		924BB39418DEE1F900E12987 /* clProblemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clProblemDetailViewController.m; sourceTree = "<group>"; };
+		92516C0C18F922100079B83D /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		92516C0D18F922100079B83D /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		9253055A190D03A000BCD12B /* GGFullScreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGFullScreenImageViewController.h; sourceTree = "<group>"; };
+		9253055B190D03A000BCD12B /* GGFullScreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGFullScreenImageViewController.m; sourceTree = "<group>"; };
+		9253057E190D2DC300BCD12B /* clSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clSettingsViewController.h; sourceTree = "<group>"; };
+		9253057F190D2DC300BCD12B /* clSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clSettingsViewController.m; sourceTree = "<group>"; };
+		925371C41916324B00E8D868 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		925371C51916324B00E8D868 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		92576AF818DDAB6E00F6020C /* clAddNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clAddNotificationViewController.m; sourceTree = "<group>"; };
+		92576AF918DDAB6E00F6020C /* clAddProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clAddProblemViewController.m; sourceTree = "<group>"; };
+		92576AFA18DDAB6E00F6020C /* clAddNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clAddNotificationViewController.h; sourceTree = "<group>"; };
+		92576AFB18DDAB6E00F6020C /* clAddProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clAddProblemViewController.h; sourceTree = "<group>"; };
+		9257B2A418DD7BF900CD22E6 /* clMapAddProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clMapAddProblemViewController.m; sourceTree = "<group>"; };
+		9257B2A518DD7BF900CD22E6 /* clMapAddProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clMapAddProblemViewController.h; sourceTree = "<group>"; };
+		927394F918DD81B700800058 /* clMapAddNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clMapAddNotificationViewController.m; sourceTree = "<group>"; };
+		927394FA18DD81B700800058 /* clMapAddNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clMapAddNotificationViewController.h; sourceTree = "<group>"; };
+		927E3A151911450000363E8F /* AsyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncURLConnection.m; sourceTree = "<group>"; };
+		927E3A161911450000363E8F /* AsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncURLConnection.h; sourceTree = "<group>"; };
+		927E3A1919137F3800363E8F /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		927E3A1A19137F3800363E8F /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		927E3A1C1913893D00363E8F /* agreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = agreement.html; sourceTree = "<group>"; };
+		927E3A241914002C00363E8F /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		927E3A251914002C00363E8F /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		927E3A2B191525B700363E8F /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = ../../Downloads/Applications/Mapbox.framework; sourceTree = "<group>"; };
+		927E3A32191526A700363E8F /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = ../../../Downloads/Applications/Mapbox.framework/Versions/A/Resources/Mapbox.bundle; sourceTree = "<group>"; };
+		92C2C16018DD74B1001B99A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		92C2C16218DD74BD001B99A3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		92C2C16418DD74CB001B99A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		92C2C16818DD76AF001B99A3 /* clMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clMapViewController.m; sourceTree = "<group>"; };
+		92C2C16918DD76AF001B99A3 /* clMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clMapViewController.h; sourceTree = "<group>"; };
+		92C2C16B18DD79D9001B99A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BrowseMeetup/Images.xcassets; sourceTree = "<group>"; };
+		92FBDE7318EC380300BF7177 /* Problem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Problem.xcdatamodel; sourceTree = "<group>"; };
+		92FBDE7518EC3B2000BF7177 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EFE4B6E17BE879700DD023B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927E3A2C191525B700363E8F /* Mapbox.framework in Frameworks */,
+				92FBDE7618EC3B2000BF7177 /* CoreData.framework in Frameworks */,
+				92C2C16518DD74CB001B99A3 /* QuartzCore.framework in Frameworks */,
+				92C2C16318DD74BD001B99A3 /* libsqlite3.dylib in Frameworks */,
+				92C2C16118DD74B1001B99A3 /* libz.dylib in Frameworks */,
+				4EFE4BAA17BE978F00DD023B /* CoreLocation.framework in Frameworks */,
+				4EFE4B7517BE879700DD023B /* UIKit.framework in Frameworks */,
+				4EFE4B7717BE879700DD023B /* Foundation.framework in Frameworks */,
+				4EFE4B7917BE879700DD023B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EFE4B6817BE879700DD023B = {
+			isa = PBXGroup;
+			children = (
+				92C2C16B18DD79D9001B99A3 /* Images.xcassets */,
+				4EFE4B7A17BE879700DD023B /* Read JSON */,
+				4EFE4B7317BE879700DD023B /* Frameworks */,
+				4EFE4B7217BE879700DD023B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EFE4B7217BE879700DD023B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE4B7117BE879700DD023B /* CityLeeks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EFE4B7317BE879700DD023B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				927E3A2B191525B700363E8F /* Mapbox.framework */,
+				92FBDE7518EC3B2000BF7177 /* CoreData.framework */,
+				92C2C16418DD74CB001B99A3 /* QuartzCore.framework */,
+				92C2C16218DD74BD001B99A3 /* libsqlite3.dylib */,
+				92C2C16018DD74B1001B99A3 /* libz.dylib */,
+				4EFE4BA917BE978F00DD023B /* CoreLocation.framework */,
+				4EFE4B7417BE879700DD023B /* UIKit.framework */,
+				4EFE4B7617BE879700DD023B /* Foundation.framework */,
+				4EFE4B7817BE879700DD023B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EFE4B7A17BE879700DD023B /* Read JSON */ = {
+			isa = PBXGroup;
+			children = (
+				925371C41916324B00E8D868 /* MBProgressHUD.h */,
+				925371C51916324B00E8D868 /* MBProgressHUD.m */,
+				927E3A241914002C00363E8F /* AsyncImageView.h */,
+				927E3A251914002C00363E8F /* AsyncImageView.m */,
+				927E3A1C1913893D00363E8F /* agreement.html */,
+				927E3A1919137F3800363E8F /* CustomIOS7AlertView.h */,
+				927E3A1A19137F3800363E8F /* CustomIOS7AlertView.m */,
+				927E3A151911450000363E8F /* AsyncURLConnection.m */,
+				927E3A161911450000363E8F /* AsyncURLConnection.h */,
+				9253057E190D2DC300BCD12B /* clSettingsViewController.h */,
+				9253057F190D2DC300BCD12B /* clSettingsViewController.m */,
+				9253055A190D03A000BCD12B /* GGFullScreenImageViewController.h */,
+				9253055B190D03A000BCD12B /* GGFullScreenImageViewController.m */,
+				9213FDE718F1944F0066D4C6 /* Problem.h */,
+				9213FDE818F1944F0066D4C6 /* Problem.m */,
+				92FBDE7218EC380300BF7177 /* Problem.xcdatamodeld */,
+				9213FDEA18F2D3F20066D4C6 /* Notification.h */,
+				92516C0C18F922100079B83D /* Category.h */,
+				92516C0D18F922100079B83D /* Category.m */,
+				9213FDEB18F2D3F20066D4C6 /* Notification.m */,
+				924BB39218DEE1F900E12987 /* clProblemDetailViewController.h */,
+				924BB39418DEE1F900E12987 /* clProblemDetailViewController.m */,
+				92576AF818DDAB6E00F6020C /* clAddNotificationViewController.m */,
+				92576AF918DDAB6E00F6020C /* clAddProblemViewController.m */,
+				92576AFA18DDAB6E00F6020C /* clAddNotificationViewController.h */,
+				92576AFB18DDAB6E00F6020C /* clAddProblemViewController.h */,
+				927394F918DD81B700800058 /* clMapAddNotificationViewController.m */,
+				927394FA18DD81B700800058 /* clMapAddNotificationViewController.h */,
+				9257B2A418DD7BF900CD22E6 /* clMapAddProblemViewController.m */,
+				9257B2A518DD7BF900CD22E6 /* clMapAddProblemViewController.h */,
+				92C2C16818DD76AF001B99A3 /* clMapViewController.m */,
+				92C2C16918DD76AF001B99A3 /* clMapViewController.h */,
+				4EFE4B8317BE879700DD023B /* AppDelegate.h */,
+				4EFE4B8417BE879700DD023B /* AppDelegate.m */,
+				4EFE4B8C17BE879700DD023B /* MainStoryboard.storyboard */,
+				4EFE4B8F17BE879700DD023B /* MasterViewController.h */,
+				4EFE4B9017BE879700DD023B /* MasterViewController.m */,
+				4EFE4BAE17BEC48C00DD023B /* DetailCell.h */,
+				4EFE4BAF17BEC48C00DD023B /* DetailCell.m */,
+				923A64FB190C0D9E0014506A /* Settings.bundle */,
+				927E3A32191526A700363E8F /* Mapbox.bundle */,
+				4EFE4B7B17BE879700DD023B /* Supporting Files */,
+			);
+			name = "Read JSON";
+			path = "Browse Meetup";
+			sourceTree = "<group>";
+		};
+		4EFE4B7B17BE879700DD023B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE4B7C17BE879700DD023B /* CityLeeks-Info.plist */,
+				4EFE4B7D17BE879700DD023B /* InfoPlist.strings */,
+				4EFE4B8017BE879700DD023B /* main.m */,
+				4EFE4B8217BE879700DD023B /* BrowseMeetup-Prefix.pch */,
+				4EFE4B8617BE879700DD023B /* Default.png */,
+				4EFE4B8817BE879700DD023B /* Default@2x.png */,
+				4EFE4B8A17BE879700DD023B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EFE4B7017BE879700DD023B /* CityLeeks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EFE4B9717BE879700DD023B /* Build configuration list for PBXNativeTarget "CityLeeks" */;
+			buildPhases = (
+				4EFE4B6D17BE879700DD023B /* Sources */,
+				4EFE4B6E17BE879700DD023B /* Frameworks */,
+				4EFE4B6F17BE879700DD023B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityLeeks;
+			productName = "Read JSON";
+			productReference = 4EFE4B7117BE879700DD023B /* CityLeeks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EFE4B6917BE879700DD023B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cityleeks;
+				TargetAttributes = {
+					4EFE4B7017BE879700DD023B = {
+						DevelopmentTeam = WU3P7RDDAE;
+					};
+				};
+			};
+			buildConfigurationList = 4EFE4B6C17BE879700DD023B /* Build configuration list for PBXProject "CityLeeks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4EFE4B6817BE879700DD023B;
+			productRefGroup = 4EFE4B7217BE879700DD023B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EFE4B7017BE879700DD023B /* CityLeeks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EFE4B6F17BE879700DD023B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFE4B7F17BE879700DD023B /* InfoPlist.strings in Resources */,
+				927E3A1D1913893D00363E8F /* agreement.html in Resources */,
+				4EFE4B8717BE879700DD023B /* Default.png in Resources */,
+				927E3A33191526A700363E8F /* Mapbox.bundle in Resources */,
+				4EFE4B8917BE879700DD023B /* Default@2x.png in Resources */,
+				92C2C16C18DD79D9001B99A3 /* Images.xcassets in Resources */,
+				4EFE4B8B17BE879700DD023B /* Default-568h@2x.png in Resources */,
+				4EFE4B8E17BE879700DD023B /* MainStoryboard.storyboard in Resources */,
+				923A64FC190C0D9E0014506A /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EFE4B6D17BE879700DD023B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927E3A1B19137F3800363E8F /* CustomIOS7AlertView.m in Sources */,
+				927394FB18DD81B700800058 /* clMapAddNotificationViewController.m in Sources */,
+				4EFE4B8117BE879700DD023B /* main.m in Sources */,
+				4EFE4B8517BE879700DD023B /* AppDelegate.m in Sources */,
+				4EFE4B9117BE879700DD023B /* MasterViewController.m in Sources */,
+				92530580190D2DC300BCD12B /* clSettingsViewController.m in Sources */,
+				92576AFD18DDAB6E00F6020C /* clAddProblemViewController.m in Sources */,
+				925371C61916324B00E8D868 /* MBProgressHUD.m in Sources */,
+				4EFE4BB017BEC48C00DD023B /* DetailCell.m in Sources */,
+				92C2C16A18DD76AF001B99A3 /* clMapViewController.m in Sources */,
+				92516C0E18F922100079B83D /* Category.m in Sources */,
+				9257B2A618DD7BF900CD22E6 /* clMapAddProblemViewController.m in Sources */,
+				92576AFC18DDAB6E00F6020C /* clAddNotificationViewController.m in Sources */,
+				927E3A261914002C00363E8F /* AsyncImageView.m in Sources */,
+				927E3A171911450000363E8F /* AsyncURLConnection.m in Sources */,
+				9213FDEC18F2D3F20066D4C6 /* Notification.m in Sources */,
+				9213FDE918F1944F0066D4C6 /* Problem.m in Sources */,
+				92FBDE7418EC380300BF7177 /* Problem.xcdatamodeld in Sources */,
+				924BB39618DEE1F900E12987 /* clProblemDetailViewController.m in Sources */,
+				9253055C190D03A000BCD12B /* GGFullScreenImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4EFE4B7D17BE879700DD023B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EFE4B7E17BE879700DD023B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4EFE4B8C17BE879700DD023B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EFE4B8D17BE879700DD023B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EFE4B9517BE879700DD023B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4EFE4B9617BE879700DD023B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EFE4B9817BE879700DD023B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Denis Gabidullin (WU3P7RDDAE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Denis Gabidullin (WU3P7RDDAE)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Denis/Downloads/Applications,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Browse Meetup/CityLeeks-Prefix.pch";
+				INFOPLIST_FILE = "Browse Meetup/CityLeeks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CityLeeks;
+				PROVISIONING_PROFILE = "BDE8D70E-86DE-42FE-818E-44AA4732F6E9";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4EFE4B9917BE879700DD023B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Denis Gabidullin (WU3P7RDDAE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Denis Gabidullin (WU3P7RDDAE)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Denis/Downloads/Applications,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Browse Meetup/CityLeeks-Prefix.pch";
+				INFOPLIST_FILE = "Browse Meetup/CityLeeks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-fobjc-arc",
+				);
+				"OTHER_CFLAGS[arch=*]" = "-fobjc-arc";
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-fobjc-arc";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CityLeeks;
+				PROVISIONING_PROFILE = "BDE8D70E-86DE-42FE-818E-44AA4732F6E9";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EFE4B6C17BE879700DD023B /* Build configuration list for PBXProject "CityLeeks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFE4B9517BE879700DD023B /* Debug */,
+				4EFE4B9617BE879700DD023B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EFE4B9717BE879700DD023B /* Build configuration list for PBXNativeTarget "CityLeeks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFE4B9817BE879700DD023B /* Debug */,
+				4EFE4B9917BE879700DD023B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92FBDE7218EC380300BF7177 /* Problem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92FBDE7318EC380300BF7177 /* Problem.xcdatamodel */,
+			);
+			currentVersion = 92FBDE7318EC380300BF7177 /* Problem.xcdatamodel */;
+			name = Problem.xcdatamodeld;
+			path = ../Problem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4EFE4B6917BE879700DD023B /* Project object */;
+}

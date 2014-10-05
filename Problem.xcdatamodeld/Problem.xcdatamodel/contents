@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Notification" representedClassName="Notification" syncable="YES">
+        <attribute name="categories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="description_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="geometry" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="support" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Problem" representedClassName="Problem" syncable="YES">
+        <attribute name="categories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="description_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="edit_right" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="geometry" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id_" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="solution" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supports" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="time_closed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time_created" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="town_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-36" positionY="9" width="128" height="90"/>
+        <element name="Notification" positionX="-18" positionY="27" width="128" height="135"/>
+        <element name="Problem" positionX="-63" positionY="-18" width="128" height="225"/>
+    </elements>
+</model>
